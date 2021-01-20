@@ -1,0 +1,2 @@
+#  Just a timer
+ just a simple timer on it you can:   Start the timer, pause the timer, and when the timer is paused the font color of the timer changes and the button that starts the timer changes to 'continue', when the continue button or the reset button are pressed the font color return to normal.  When pressing the reset button the timer returns to the '00:00:00' time and the button to start the timer returns to normal.
