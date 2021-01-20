@@ -1,0 +1,93 @@
+@media (max-width: 1100px){
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    main.borda{
+        margin: auto;
+        width: 95%;
+        margin-top: 160px;
+
+    }
+}
+
+@media(max-width: 600px){
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+  
+        main {
+            height: 100%;
+            margin-bottom: 90px;
+            margin-top: 40px;
+        }
+
+            .borda {
+                margin: auto;
+                width: 95%;
+                margin-top: 160px;
+            }
+
+                header p {
+                    font-size: 60px;
+                }
+
+                p.controls span {
+                    font-size: 0px;
+                }
+
+                p.controls img {
+                    height: 35px;
+                    width: 35px;
+                }
+
+}
+
+@media(min-height: 600px){
+    body{
+        height: 100%;
+        overflow: hidden;
+    }
+    
+        main {
+            height: 100%;
+        }
+
+            .borda{
+                width: 80%;
+                position: relative;
+                margin: auto;
+                margin-top: 160px;
+                overflow-x: hidden;
+            }
+}
+
+@media(min-height: 1024px){
+    body{
+        height: 100vh;
+    }
+
+        main{
+            padding-top: 140px;
+            padding-left: 30px;
+            width: 80%;
+            height: 70%;
+            margin: auto;
+            font-size: 30px;
+        }
+            p.controls span {
+                font-size: 25px;
+            }
+            
+            p.controls img {
+                height: 35px;
+                width: 35px;
+            }
+}
