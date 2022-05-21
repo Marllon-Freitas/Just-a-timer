@@ -1,2 +1,39 @@
-#  Just a timer
- just a simple timer on it you can:   Start the timer, pause the timer, and when the timer is paused the font color of the timer changes and the button that starts the timer changes to 'continue', when the continue button or the reset button are pressed the font color return to normal.  When pressing the reset button the timer returns to the '00:00:00' time and the button to start the timer returns to normal.
+# Just a Timer
+
+<p align="center" style="display: flex; align-items: center; justify-content: center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-License">Licença</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+<div style="display: grid; grid-template-columns: 2fr 1fr; gap: 0.5rem;" >
+  <img alt="just a timer tela em computadores" title="just a timer tela em computadores" src="github-img/screenshot-desktop.png" style='border-radius: 0.7rem; grid-row: 1 / 1'/>
+  <img alt="just a timer tela em celulares" title="just a timer tela em celulares" src="github-img/screenshot-mobile.png" style='border-radius: 0.7rem; grid-row: 1 / span 2; height: 100%'/>
+  <img alt="just a timer tela em celulares(deitado)"  title="just a timer tela em celulares(deitado)"src="github-img/screenshot-mobile_horizontal.png" style='border-radius: 0.7rem; grid-column-start: 1; grid-row: 2 / 2'/>
+</div>
+
+<br>
+
+---
+
+## 🧪 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [HTML5]
+- [CSS3]
+- [JavaScript]
+
+---
+
+## 💻 Projeto
+
+Just a timer, como o nome sugere é um timer extremamente simples com funcionalidades de pausar, resetar e continuar o tempo.
+
+---
+
+## 📝 License
+
+Esse projeto está sob a licença MIT.
+
+---

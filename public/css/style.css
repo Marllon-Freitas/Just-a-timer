@@ -1,84 +1,112 @@
 :root {
-    --best-color: aliceblue;
+  --best-color: aliceblue;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
-body{
-    height: 100vh;
-    overflow-x: hidden;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: linear-gradient(rgb(0, 11, 42), rgb(16, 3, 54));    
-    font-family:'clockicons';
-    color: red;
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #2d3436;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(170deg, #2d3436 0%, #000000 60%);
+  font-family: "clockicons";
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @import url(//db.onlinewebfonts.com/c/84cb021d5f9af287ffff84b61beef6dc?family=clockicons);
 
 @font-face {
-    font-family: "clockicons"; src: url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot"); 
-    src: url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.svg#clockicons") format("svg"); 
+  font-family: "clockicons";
+  src: url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot");
+  src: url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.svg#clockicons")
+      format("svg");
 }
 
 main {
-    height: 90%;
-    width: 50%;
-    position: relative;
-    margin: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-    /*Configurações da area principal de interação*/
-    .borda {
-        width: 60%;
-        margin: auto;
-        margin-top: 160px;
-        padding: 25px;
-        background-color: #000;
-        border: 1px solid var(--best-color);
-        border-radius: 29px;
-    }
+.borda {
+  max-width: 30rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1.5rem;
+}
 
-    header {
-        width: 100%;
-        text-align: center;
-    }
+header {
+  width: 100%;
+  text-align: center;
+}
 
-    header  p {
-        padding: 0;
-        margin: auto;
-        color: var(--text-color);
-        font-size: 120px;
-    }
+header p {
+  padding: 0;
+  margin: auto;
+  color: var(--text-color);
+  font-size: clamp(2.5rem, 7vw, 7rem);
+}
 
-        p.controls button {
-            border: none;
-            cursor: pointer;
-            background-color: black;
-            font-family: 'poppins', sans-serif;
-            outline: none;
-            border-radius: 15px;
-            align-items: flex-start;
-            padding: 10px;
-        }
-        p.controls img {
-            margin-bottom: -8px;
-            position: relative;
-        }
-        p.controls span {
-            color: aliceblue;
-            position: relative;
-            margin: 5px 5px 20px 8px;
-        }
+p.controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1.5rem;
+}
 
-    /*mudança no estilo qundo o timer é pausado*/
-    /*style change when the timer is paused*/
-    .pausado {
-        color: var(--best-color) ;
-    }
-    
+p.controls button {
+  border: 0.5px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "poppins", sans-serif;
+  outline: none;
+  border-radius: 15px;
+  padding: 0.7rem;
+  transition: all ease-in-out 0.3s;
+  text-align: center;
+}
+
+p.controls button:hover {
+  background-color: rgb(90, 3, 3);
+}
+
+p.controls img {
+  width: clamp(1rem, 1.5vw, 2rem);
+}
+
+p.controls span {
+  color: aliceblue;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.paused {
+  color: var(--best-color);
+}
