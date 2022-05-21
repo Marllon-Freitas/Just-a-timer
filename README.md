@@ -6,9 +6,9 @@
   <a href="#-license">Licença</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-<div style="display: inline_block" >
-    <img  width="770em" height="513em" alt="just a timer tela em computadores" title="just a timer tela em computadores" src="github-img/screenshot-desktop.png"/> 
-    <img  height="513em" alt="just a timer tela em celulares" title="just a timer tela em celulares" src="github-img/screenshot-mobile.png"/>
+<div align="center"" >
+    <img  width="100%" alt="just a timer tela em computadores" title="just a timer tela em computadores" src="github-img/screenshot-desktop.png"/> 
+    <img  height="800em" alt="just a timer tela em celulares" title="just a timer tela em celulares" src="github-img/screenshot-mobile.png"/>
     <img  alt="just a timer tela em celulares(deitado)"  title="just a timer tela em celulares(deitado)"src="github-img/screenshot-mobile_horizontal.png"/>
   
 </div>
